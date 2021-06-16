@@ -5,6 +5,8 @@ echo 'deb [trusted=yes] https://binyamin-binni.github.io/paid bxi stable' > $PRE
 
 pkg update
 
+pkg install bxi
+
 # Usage
 
 bxi
