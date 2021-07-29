@@ -1,12 +1,18 @@
-# Only For Termux (Android 5.1+)
+# For Termux
 # Installation
-
-echo 'deb [trusted=yes] https://binyamin-binni.github.io/paid bxi stable' > $PREFIX/etc/apt/sources.list.d/binni.list
 
 pkg update
 
-pkg install bxi
+pkg install git
+
+pkg install python
+
+rm -rf bxi
+
+git clone https://github.com/binyamin-binni/bxi
 
 # Usage
 
-bxi
+cd bxi
+
+python bxi.py
